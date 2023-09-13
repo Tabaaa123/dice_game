@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Dice Roller Durby V2</title>
+    <link rel="stylesheet" href="dice_game.css">
+    <meta name="description" content="Play a fun dice game. Try your luck and get on the highscore list!">
+</head>
+
+<body>
+    <center>
+        <h1> Dice Game</h1>
+    </center>
+    <div class="row">
+        <div class="col-3">
+            <h2>Your Dice</h2>
+            <img src="images/d1.png" id="mydice1">
+            <h2>Enemy's Dice</h2>
+            <img src="images/e1.png" id="hisdice1">
+        </div>
+        <div class="col-3">
+            <button class="greenBut" onClick="throwdice()">Roll Dice</button>
+            <form id="myform">
+                Player1:<br>
+                <input name="player_name" maxlength="20" class="greenBut" type="text" id="player_name"
+                    placeholder="Type Your Name">
+            </form>
+            <form id="myform">
+                Player2:<br>
+                <input name="player_name" maxlength="20" class="greenBut" type="text" id="player_name"
+                    placeholder="Type Your Enemy's Name">
+                    <button type="submit" class="greenBut">End Game</button>
+            </form>
+        </div>
+        <div class="col-3">
+            <br><br>
+            <img src="https://www.icegif.com/wp-content/uploads/winner-icegif-7.gif" id="message" alt="Good Luck!" />
+        </div>
+    </div>
+    <script src="dice_game.js"></script>
+</body>
+
+</html>

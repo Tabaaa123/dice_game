@@ -1,0 +1,72 @@
+body {
+    color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Rows*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Classes containing "col-"*/
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+/* Column width for large devices (i.e. computers)*/
+@media only screen and (min-width: 768px) {
+
+    .col-3 {
+        width: 25%;
+    }
+
+}
+
+/* Column width for large devices (i.e. tablets)*/
+@media only screen and (min-width: 600px) {
+
+
+    .col-t-3 {
+        width: 25%;
+    }
+
+}
+
+/* Button */
+.greenBut {
+    color: rgb(6, 248, 119);
+    padding: 12px;
+    /* Some padding */
+    background-color: yellow;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 6px;
+    /* Rounded borders */
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+    margin: 10px;
+}
+
+
+button:hover {
+    opacity: .5;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0px 80px 10px ;
+}
